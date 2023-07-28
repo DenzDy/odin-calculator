@@ -67,6 +67,17 @@ function clear_data(){
     display()
 }
 
+function backspace_del(){
+    console.log(firstNumCheck)
+    if(firstNumCheck){
+        firstNum = firstNum.slice(0, -1);
+    }
+    else{
+        secondNum = secondNum.slice(0, -1);
+    }
+    display();
+}
+
 function operator_onclick(operator){
     if(operator_symbol == "" || secondNum == ""){
         operator_symbol = operator;

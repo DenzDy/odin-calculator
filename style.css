@@ -32,6 +32,9 @@ main{
 .button-container{
     height: 100%;
     display: grid;
+    column-gap: 0.2rem;
+    row-gap: 0.2rem;
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -43,15 +46,18 @@ button{
     width: 100%;
     min-width: 80px;
     min-height: 80px;
-
+    text-decoration: none;
+    border: 1px solid black;
     color: black;
     font-size: 1rem;
 }
 #AC{
     grid-column: 1 / span 2;
+    background-color: rgb(134, 162, 255);
 }
 #DEL{
     grid-column: 3 /span 2;
+    background-color: rgb(255, 134, 134);
 }
 #screen{
     background-color:white;
