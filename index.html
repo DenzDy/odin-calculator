@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main>
+        <header>Calculator - Project Odin</header>
+        <div class="calculator-container">
+            <div id="screen"></div>
+            <div class="button-container">
+                <button id="AC" class="two-span" onclick="clear_data()">AC</button>
+                <button id="DEL" class="two-span">DEL</button>
+                <button id="7" class="numbers" onclick="number_onclick(7)">7</button>
+                <button id="8" class="numbers" onclick="number_onclick(8)">8</button>
+                <button id="9" class="numbers" onclick="number_onclick(9)">9</button>
+                <button id="/" onclick="operator_onclick('/')">/</button>
+                <button id="4" class="numbers" onclick="number_onclick(4)">4</button>
+                <button id="5" class="numbers" onclick="number_onclick(5)">5</button>
+                <button id="6" class="numbers" onclick="number_onclick(6)">6</button>
+                <button id="x" onclick="operator_onclick('x')">x</button>
+                <button id="1" class="numbers" onclick="number_onclick(1)">1</button>
+                <button id="2" class="numbers" onclick="number_onclick(2)">2</button>
+                <button id="3" class="numbers" onclick="number_onclick(3)">3</button>
+                <button id="-" onclick="operator_onclick('-')">-</button>
+                <button id="." class="numbers">.</button>
+                <button id="0" class="numbers" onclick="number_onclick(0)">0</button>
+                <button id="+" onclick="operator_onclick('+')">+</button>
+                <button id="=" onclick="operator_onclick('=')">=</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
